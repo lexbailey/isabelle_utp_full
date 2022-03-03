@@ -13,3 +13,6 @@
 [submodule "modules/interaction-trees"]
 	path = modules/interaction-trees
 	url = git@github.com:isabelle-utp/interaction-trees.git
+[submodule "isabelle"]
+	path = isabelle
+	url = git@github.com:isabelle-prover/mirror-isabelle.git

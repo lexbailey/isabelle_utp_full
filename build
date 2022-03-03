@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+set -e
+ln -fhs $PWD/modules isabelle/src/CyPhyAssure
+wget -nc https://www.isa-afp.org/release/afp-current.tar.gz
+tar -xf afp-current.tar.gz
+LATEST_AFP=$PWD/$(tar -tvf afp-current.tar.gz | head -n 1 | sed -e 's/^.* \([^ ]*\)$/\1/')
+cd isabelle
+grep CyPhyAssure ROOTS > /dev/null || echo "src/CyPhyAssure" >> ROOTS
+./bin/isabelle components -I
+./bin/isabelle components -a
+./bin/isabelle components -u $LATEST_AFP/thys
+./bin/isabelle build -b ITree_UTP
+
