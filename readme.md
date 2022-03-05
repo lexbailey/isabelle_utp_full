@@ -23,3 +23,13 @@ it's really not very long, you can have a look at it and see what it does
 The isabelle submodule is a modified version with some additional code required for ITrees to work
 
 The isabelle version also default to putting the `contrib` components in the isabelle directory, instead of the user's home directory, and uses a custom `$ISABELLE_IDENIFIER` value so this will not interfere with other isabelle instances on the system.
+
+## Known issues
+
+I don't know if I've configured the thing badly, but sometimes if you have to retry a failed run of the build script, it will complain about being unable to download "thys". This is because it's trying to download something that doesn't exist, thinking that it needs to do it, when really the thing it's looking for is the local copy of the AFP.
+
+The fastest way to deal with this is to delete the config in the home directory:
+
+`rm -rf ~/.isabelle/itrees_utp_2021-1`
+
+and then just run the build again
