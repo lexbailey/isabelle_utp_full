@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
 set -e
-ln -fhs $PWD/modules isabelle/src/CyPhyAssure
+#ln -fhs $PWD/modules isabelle/src/CyPhyAssure
 AFP=$PWD/mirror-afp-2021-1
 cd isabelle
-grep CyPhyAssure ROOTS > /dev/null || echo "src/CyPhyAssure" >> ROOTS
+#grep CyPhyAssure ROOTS > /dev/null || echo "src/CyPhyAssure" >> ROOTS
 ./bin/isabelle components -I
 ./bin/isabelle components -a
 ./bin/isabelle components -u $AFP/thys
+./bin/isabelle ghc_setup
 ./bin/isabelle build -b ITree_UTP
 
