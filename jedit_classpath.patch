@@ -1,0 +1,3 @@
+6a7,8
+> classpath "$JEDIT_HOME/jars/Console.jar"
+> classpath "$JEDIT_HOME/jars/ErrorList.jar"

@@ -33,3 +33,11 @@ The fastest way to deal with this is to delete the config in the home directory:
 `rm -rf ~/.isabelle/itrees_utp_2021-1`
 
 and then just run the build again
+
+another related issue is with isabelle complaining of a session being duplicated, for example:
+
+    *** Duplicate session "Berlekamp_Zassenhaus" (line 3 of "some/path/mirror-afp-2021-1/thys/Berlekamp_Zassenhaus/ROOT") (line 3 of "some/other/path/mirror-afp-2021-1/thys/Berlekamp_Zassenhaus/ROOT")
+
+This is normally because you have two different instance of this version of isabelle on your system.
+
+You can resolve this as above, by deleting the appropriate subdirectory in your isabelle config dir, or you can set your `ISABELLE_IDENTIFIER` variable differently for each one, and rebuild the user config appropriately.
