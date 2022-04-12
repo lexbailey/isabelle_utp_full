@@ -10,4 +10,5 @@ grep -F 'classpath "$JEDIT_HOME/jars/Console.jar"' contrib/jedit-20211103/etc/se
 ./bin/isabelle components -u $AFP/thys
 ./bin/isabelle ghc_setup
 ./bin/isabelle build -b ITree_UTP
+./bin/isabelle build -b UTP2 # Not yet public, this step can be skipped if you don't have access
 
