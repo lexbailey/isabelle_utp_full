@@ -1,14 +1,9 @@
 #!/usr/bin/env bash
 set -e
-#ln -fhs $PWD/modules isabelle/src/CyPhyAssure # no need to do this in this git repo, it uses a fork of isabelle that has this change in already
-AFP=$PWD/mirror-afp-2021-1
 cd isabelle
-#grep CyPhyAssure ROOTS > /dev/null || echo "src/CyPhyAssure" >> ROOTS # this change is already in the file in this git repo
 ./bin/isabelle components -I
 ./bin/isabelle components -a
 grep -F 'classpath "$JEDIT_HOME/jars/Console.jar"' contrib/jedit-20211103/etc/settings || patch contrib/jedit-20211103/etc/settings < ../jedit_classpath.patch
-./bin/isabelle components -u $AFP/thys
 ./bin/isabelle ghc_setup
-./bin/isabelle build -b ITree_UTP
-./bin/isabelle build -b UTP2 # Not yet public, this step can be skipped if you don't have access
+./bin/isabelle build -b UTP2
 

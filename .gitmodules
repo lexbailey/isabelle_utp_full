@@ -1,24 +1,6 @@
-[submodule "modules/Shallow-Expressions"]
-	path = modules/Shallow-Expressions
-	url = git@github.com:isabelle-utp/Shallow-Expressions.git
-[submodule "modules/Z_Machines"]
-	path = modules/Z_Machines
-	url = git@github.com:isabelle-utp/Z_Machines.git
-[submodule "modules/Z_Toolkit"]
-	path = modules/Z_Toolkit
-	url = git@github.com:isabelle-utp/Z_Toolkit.git
-[submodule "modules/explore-subgoal"]
-	path = modules/explore-subgoal
-	url = git@github.com:isabelle-utp/explore-subgoal.git
-[submodule "modules/interaction-trees"]
-	path = modules/interaction-trees
-	url = git@github.com:isabelle-utp/interaction-trees.git
 [submodule "isabelle"]
 	path = isabelle
-	url = git@github.com:danieljabailey/itrees_isabelle_fork.git
-[submodule "mirror-afp-2021-1"]
-	path = mirror-afp-2021-1
-	url = git@github.com:isabelle-prover/mirror-afp-2021-1.git
-[submodule "modules/UTP"]
-	path = modules/UTP
-	url = git@github.com:isabelle-utp/UTP.git
+	url = git@github.com:lexbailey/itrees_isabelle_fork.git
+[submodule "modules"]
+	path = modules
+	url = git@github.com:isabelle-utp/CyPhyAssure.git
