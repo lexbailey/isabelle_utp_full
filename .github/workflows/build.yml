@@ -1,13 +1,13 @@
 name: Build
 on: [push]
 jobs:
-  Check build:
+  check_build:
     runs-on: ubuntu-latest
     steps:
       - name: Check out
         uses: actions/checkout@v3
-      - name: Get submodules
-        run: git submodule update --init --recursive
+        with:
+            submodules: recursive
       - name: Run build
         run: ./build
 
