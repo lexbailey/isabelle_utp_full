@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -e
 cd isabelle
+grep CyPhyAssure ROOTS > /dev/null || echo "src/CyPhyAssure" >> ROOTS
 ./bin/isabelle components -I
 ./bin/isabelle components -a
 grep -F 'classpath "$JEDIT_HOME/jars/Console.jar"' contrib/jedit-20211103/etc/settings || patch contrib/jedit-20211103/etc/settings < ../jedit_classpath.patch
