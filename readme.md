@@ -1,10 +1,10 @@
-# Isabelle ITrees Full
+# Isabelle/UTP
 
 This git repository is a wrapper around various other repositories.
 
-The other repositories are submodules in this repository. The modules include the isabelle source, the isabelle AFP, and all of components required for ITrees.
+The other repositories are submodules in this repository. The modules include the isabelle source, the isabelle AFP, and all of components required for Isabelle/UTP.
 
-All of the ITree related repositories and dependencies can be found here: https://github.com/isabelle-utp
+All of the Isabelle/UTP related repositories and dependencies can be found here: https://github.com/isabelle-utp
 
 ## Building
 
