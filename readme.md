@@ -30,7 +30,7 @@ This will load the UTP2 session which was built by the `./build` script. You can
 
 The isabelle submodule is a modified version with some additional code required for ITrees to work
 
-The isabelle version also default to putting the `contrib` components in the isabelle directory, instead of the user's home directory, and uses a custom `$ISABELLE_IDENIFIER` value so this will not interfere with other isabelle instances on the system.
+~~This isabelle version also defaults to putting the `contrib` components in the isabelle directory, instead of the user's home directory, and uses a custom `$ISABELLE_IDENIFIER` value so this will not interfere with other isabelle instances on the system.~~ (This is not true, but ideally it would be true. TODO)
 
 ## Known issues
 
