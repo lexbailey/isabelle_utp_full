@@ -20,6 +20,14 @@ Once everything has been cloned, you can build isabelle and all the required com
 
 it's really not very long, you can have a look at it and see what it does
 
+## Running:
+
+You can now launch the Isabelle editor from the isabelle directory like so:
+
+    ./bin/isabelle jedit -l UTP2
+
+This will load the UTP2 session which was built by the `./build` script. You can load other sessions too, look at the ROOT files in the submodules for details of the sessions.
+
 ## Notes:
 
 The isabelle submodule is a modified version with some additional code required for ITrees to work
