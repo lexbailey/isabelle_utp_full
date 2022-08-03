@@ -12,8 +12,6 @@ To build everything, first clone this repository, then
 
     git submodule update --init --recursive
 
-This includes one private repo (UTP) which can be skipped if you don't need it or don't have access.
-
 Once everything has been cloned, you can build isabelle and all the required components using the provided build script
 
     ./build
